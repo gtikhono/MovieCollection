@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+Copyright © 2016 Gabriela Tikhonova
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+
+http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.
+
+Purpose: XML Layout of the main activity
+
+Ser423 Mobile Applications
+ @author   Gabriela Tikhonova  mailto:gtikhono@asu.edu.
+ @version March 31, 2016
+-->
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="gtikhono.msse.asu.edu.moviecollection.MainActivity"
+    android:weightSum="1">
+
+    <LinearLayout
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:layout_width="0px"
+        android:layout_height="0px"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/searchTextField"
+        android:hint="Please enter a movie name" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SEARCH"
+        android:id="@+id/searchButton" />
+
+    <ListView
+        android:id="@+id/list"
+        android:layout_height="322dp"
+        android:layout_width="match_parent"
+        android:layout_weight="0.85">
+    </ListView>
+
+
+    <Button
+        android:layout_width="218dp"
+        android:layout_height="wrap_content"
+        android:text="Manually Add Movie"
+        android:id="@+id/addMovieButton"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:id="@+id/urlET"
+        android:text="@string/defaulturl"
+        android:layout_gravity="right" />
+
+
+</LinearLayout>

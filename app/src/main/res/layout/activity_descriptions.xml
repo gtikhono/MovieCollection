@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+Copyright © 2016 Gabriela Tikhonova
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+
+http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.
+
+Purpose: XML Layout of the description activity
+
+Ser423 Mobile Applications
+ @author   Gabriela Tikhonova  mailto:gtikhono@asu.edu.
+ @version March 4, 2016
+-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="16dp"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:paddingTop="16dp"
+    tools:context="gtikhono.msse.asu.edu.moviecollection.Descriptions"
+    android:background="#d3f7da">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#d3f7da">
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/table"
+            android:background="#d3f7da">
+            <TableRow>
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Remove"
+                    android:id="@+id/removeMovie"
+                    android:layout_column="1" />
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="View Video"
+                    android:id="@+id/viewVideo"
+                    android:layout_column="2" />
+            </TableRow>
+
+            <TableRow>
+                <TextView
+                    android:layout_column="1"
+                    android:padding="8dip"
+                    android:textSize="40dp"
+                    android:textIsSelectable="false"
+                    android:layout_span="2"
+                    android:textColor="#24273c"
+                    android:id="@+id/title" />
+
+            </TableRow>
+
+            <View
+                android:layout_height="2dip"
+                android:background="#24273c"
+                android:layout_width="match_parent"/>
+
+            <TableRow>
+
+            </TableRow>
+
+            <TableRow android:orientation="vertical">
+                <TextView
+                    android:layout_column="1"
+                    android:text="Year"
+                    android:padding="8dip"
+                    android:textSize="20dp"
+                    android:textIsSelectable="false"
+                    />
+                <TextView
+                    android:padding="8dip"
+                    android:layout_column="2"
+                    android:textSize="20dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:maxWidth="225dp"
+                    android:id="@+id/year"
+                    android:layout_span="3" />
+
+            </TableRow>
+            <TableRow>
+                <TextView
+                    android:layout_column="1"
+                    android:text="Rated"
+                    android:padding="8dip"
+                    android:textSize="20dp"
+                    android:textIsSelectable="false" />
+                <TextView
+                    android:padding="8dip"
+                    android:layout_column="2"
+                    android:textSize="20dp"
+                    android:id="@+id/rated"
+                    android:maxWidth="225dp" />
+
+            </TableRow>
+            <TableRow>
+                <TextView
+                    android:layout_column="1"
+                    android:text="Released"
+                    android:padding="8dip"
+                    android:textSize="20dp"
+                    android:textIsSelectable="false" />
+                <TextView
+                    android:padding="8dip"
+                    android:layout_column="2"
+                    android:textSize="20dp"
+                    android:id="@+id/released"
+                    android:maxWidth="225dp" />
+
+            </TableRow>
+
+            <TableRow>
+                <TextView
+                    android:layout_column="1"
+                    android:text="Runtime"
+                    android:padding="8dip"
+                    android:textSize="20dp"
+                    android:textIsSelectable="false" />
+                <TextView
+                    android:padding="8dip"
+                    android:layout_column="2"
+                    android:textSize="20dp"
+                    android:id="@+id/runtime"
+                    android:maxWidth="225dp"
+                    android:layout_span="3" />
+            </TableRow>
+
+            <TableRow>
+                <TextView
+                    android:layout_column="1"
+                    android:text="Genre"
+                    android:padding="8dip"
+                    android:textSize="20dp"
+                    android:textIsSelectable="false" />
+                <TextView
+                    android:padding="8dip"
+                    android:layout_column="2"
+                    android:textSize="15sp"
+                    android:id="@+id/genre"
+                    android:maxWidth="225dp"
+                    android:layout_span="1" />
+            </TableRow>
+
+            <TableRow>
+                <TextView
+                    android:layout_column="1"
+                    android:text="Actors"
+                    android:padding="8dip"
+                    android:textSize="20dp"
+                    android:textIsSelectable="false" />
+                <TextView
+                    android:padding="8dip"
+                    android:layout_column="2"
+                    android:textSize="15dp"
+                    android:id="@+id/actors"
+                    android:layout_span="1"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:maxWidth="225dp" />
+            </TableRow>
+
+            <TableRow>
+                <TextView
+                    android:layout_column="1"
+                    android:text="Plot"
+                    android:padding="8dip"
+                    android:textSize="20dp"
+                    android:textIsSelectable="false" />
+                <TextView
+                    android:padding="8dip"
+                    android:layout_column="2"
+                    android:textSize="15sp"
+                    android:id="@+id/plot"
+                    android:layout_span="1"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:maxWidth="225dp" />
+            </TableRow>
+            <TableRow>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="text"
+                    android:imeOptions="actionNext"
+                    android:id="@+id/urlET"
+                    android:layout_column="2"
+                    android:text="@string/defaulturl"
+                    android:layout_gravity="right" />
+            </TableRow>
+
+        </TableLayout>
+
+    </ScrollView>
+
+</LinearLayout>
