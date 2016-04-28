@@ -38,7 +38,7 @@ import java.util.Set;
 *
 * Ser423 Mobile Applications
 * @author   Gabriela Tikhonova  mailto:gtikhono@asu.edu.
-* @version March, 4, 2016
+* @version April 28, 2016
 */
 
 
@@ -76,19 +76,6 @@ public class MainActivity extends AppCompatActivity {
         adapter = new ArrayAdapter<String>(this,
                 android.R.layout.simple_list_item_1, android.R.id.text1, new ArrayList<>(Arrays.asList(names)));
         listView.setAdapter(adapter);
-
-        //if db is empty
-
-
-//        try{
-//            MethodInformation mi = new MethodInformation(this, urlET.getText().toString(),"getTitles",
-//                    new String[]{});
-//            AsyncCollectionConnect ac = (AsyncCollectionConnect) new AsyncCollectionConnect().execute(mi);
-//        } catch (Exception ex){
-//            android.util.Log.w(this.getClass().getSimpleName(),"Exception creating adapter: "+
-//                    ex.getMessage());
-//        }
-        //if it's not empty get all the db stuff and populate adpater
 
         this.populateList();
 
@@ -150,10 +137,6 @@ public class MainActivity extends AppCompatActivity {
             Arrays.sort(namesFromServer);
             Arrays.sort(namesFromDB);
 
-
-//
-//            List <String> dbNames = Arrays.asList(namesFromDB);
-//
             System.out.println("serverNames " + Arrays.toString(namesFromServer));
             System.out.println("dbNames " + Arrays.toString(namesFromDB));
 
@@ -166,7 +149,6 @@ public class MainActivity extends AppCompatActivity {
                         MethodInformation mi = new MethodInformation(this, urlET.getText().toString(), "get",
                                 new String[]{sName});
                         AsyncCollectionConnect ac = (AsyncCollectionConnect) new AsyncCollectionConnect().execute(mi);
-                        //populateList();
 
                     } catch (Exception ex) {
                         android.util.Log.w(this.getClass().getSimpleName(), "Exception processing selection: " +

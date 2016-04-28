@@ -25,7 +25,7 @@ import android.widget.Button;
 *
 * Ser423 Mobile Applications
 * @author   Gabriela Tikhonova  mailto:gtikhono@asu.edu.
-* @version March 31, 2016
+* @version April 28, 2016
 */
 public class AlertActivity extends Activity {
 

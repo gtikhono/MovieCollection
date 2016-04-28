@@ -17,7 +17,7 @@ Purpose: XML Layout of the newMovieActivity
 
 Ser423 Mobile Applications
  @author   Gabriela Tikhonova  mailto:gtikhono@asu.edu.
- @version March 4, 2016
+ @version April 28, 2016
 -->
 
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"

@@ -35,7 +35,7 @@ import android.widget.TextView;
 *
 * Ser423 Mobile Applications
 * @author   Gabriela Tikhonova  mailto:gtikhono@asu.edu.
-* @version March, 4, 2016
+* @version version April 28, 2016
 */
 
 public class Descriptions extends AppCompatActivity {

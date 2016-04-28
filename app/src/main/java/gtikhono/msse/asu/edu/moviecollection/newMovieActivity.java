@@ -39,7 +39,7 @@ import gtikhono.msse.asu.edu.moviecollection.MovieDB;
 *
 * Ser423 Mobile Applications
 * @author   Gabriela Tikhonova  mailto:gtikhono@asu.edu.
-* @version March 31, 2016
+* @version April 28, 2016
 */
 
 public class newMovieActivity extends AppCompatActivity {

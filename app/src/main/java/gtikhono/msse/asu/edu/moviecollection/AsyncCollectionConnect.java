@@ -33,11 +33,11 @@ import java.util.Arrays;
 * Purpose: Using AsyncTask to update UI components and modify the server
 *
 * Orginal Code made by Copyright ©  2016 Tim Lindquist, and modified by
-* Gabriela Tikhonova to use on Assignemnt 5
+* Gabriela Tikhonova to use on Assignemnt 9
 *
 * Ser423 Mobile Applications
-* @author   Gabriela Tikhonova  mailto:gtikhono@asu.edu.
-* @version March, 4, 2016
+* @author Gabriela Tikhonova  mailto:gtikhono@asu.edu.
+* @version April 28, 2016
 */
 
 public class AsyncCollectionConnect extends AsyncTask<MethodInformation, Integer, MethodInformation> {
